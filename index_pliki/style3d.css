@@ -1,0 +1,68 @@
+
+#perspective {
+    perspective: 1000px;
+    width: 150px;
+    height: 150px;
+}
+#cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    transform: rotateX(30deg) rotateY(30deg);
+    /* animation:obrot 8s linear infinite;  */
+}
+@keyframes obrot
+{
+  0% { transform:rotateX(-30deg) rotateY(0); }
+  100% { transform:rotateX(-30deg) rotateY(360deg); }
+}
+
+.side {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.side:nth-child(1) {
+    top: -150px;
+    left: 0;
+    background-color: yellow;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+.side:nth-child(2) {
+    top: 0;
+    left: -150px;
+    background-color: orange;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+.side:nth-child(3) {
+    top: 0;
+    left: 0;
+    background-color: blue;
+}
+.side:nth-child(4) {
+    top: 0;
+    left: 150px;
+    background-color: red;
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
+.side:nth-child(5) {
+    top: 150px;
+    left: 0;
+    background-color: white;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+.side:nth-child(6) {
+    top: 0;
+    left: 0;
+    background-color: green;
+    transform-origin: center center;
+    transform: translateZ(-150px) rotateX(180deg);
+}
+

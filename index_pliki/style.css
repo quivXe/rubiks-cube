@@ -1,0 +1,50 @@
+* {
+    text-align: center;
+    line-height: 50px;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+#main {
+    margin: auto;
+}
+/* sides */
+.side {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* stickers */
+#cube .side > * {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* has 3 sides */
+#cube > #cross-container {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* horizontal sides */
+#cube > #cross-container > * {
+    margin-left: 0;
+}
+
+input[type=button] {
+    width: 55px;
+}
+/* input[type=button]:nth-child(1) {
+    margin-left: 200px;
+} */

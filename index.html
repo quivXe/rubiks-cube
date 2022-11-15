@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostka Rubika</title>
+
+    <script src="index_pliki/corner.js" defer="defer"></script>
+    <script src="index_pliki/edge.js" defer="defer"></script>
+    <script src="index_pliki/center.js" defer="defer"></script>
+    <script src="index_pliki/side.js" defer="defer"></script>
+    <script src="index_pliki/cube.js" defer="defer"></script>
+    <script src="index_pliki/script.js" defer="defer"></script>
+    <script src="index_pliki/sliding.js" defer="defer"></script>
+
+    
+    <link rel="stylesheet" href="index_pliki/style.css">
+    <link rel="stylesheet" href="index_pliki/style3d.css">
+
+</head>
+<body>
+    <div id="main">
+        <div id="perspective">
+            <div id="cube">
+                <div id="side0" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+                <div id="side1" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+                <div id="side2" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+                <div id="side3" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+        
+                <div id="side4" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+                <div id="side5" class="side">
+                    <div class="ww0"></div>
+                    <div class="ww1"></div>
+                    <div class="ww2"></div>
+                    <div class="ww3"></div>
+                    <div class="ww4"></div>
+                    <div class="ww5"></div>
+                    <div class="ww6"></div>
+                    <div class="ww7"></div>
+                    <div class="ww8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="inputs">
+        <input type="button" value="R" onclick="cube.r_move()">
+        <input type="button" value="R'" onclick="cube.r_p_move()">
+        <input type="button" value="L" onclick="cube.l_move()">
+        <input type="button" value="L'" onclick="cube.l_p_move()">
+        <input type="button" value="U" onclick="cube.u_move()">
+        <input type="button" value="U'" onclick="cube.u_p_move()">
+        <input type="button" value="D" onclick="cube.d_move()">
+        <input type="button" value="D'" onclick="cube.d_p_move()">
+        <input type="button" value="F" onclick="cube.f_move()">
+        <input type="button" value="F'" onclick="cube.f_p_move()">
+        <input type="button" value="B" onclick="cube.b_move()">
+        <input type="button" value="B'" onclick="cube.b_p_move()">
+        <input id="algorithm_input" type="text" placeholder="algorytm, litery tylko duze">
+        <input type="button" value="zatwierdz algorytm" onclick="algo_from_html()">
+        <label>x rotation</label><input type="range" min="-360" max="360" value="30" oninput="change_x(this)">
+        <label>y rotation</label><input type="range" min="-360" max="360" value="30" oninput="change_y(this)">
+    </div>
+
+</body></html>
